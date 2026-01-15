@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register a Course</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .container{
+            width: 600px;
+        }
+        label, input, select, button{
+            width: 100%;
+        }
+        input, select{
+            height: 40px;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid rgb(217, 213, 213);
+        }
+    </style>
 </head>
 <body>
-    <div class="container pt-5 text-center">
-        <h2>Register a Course</h2>
+    <div class="container pt-5">
+        <h2 class="text-center">Register a Course</h2>
         <form action="" method="post">
             <label for="userName">User Name</label><br>
             <input type="text" name="userName" id="" placeholder="Username">
@@ -18,7 +32,7 @@
             <input type="email" name="email" id="" placeholder="Email ID">
             <br><br>
             <label for="course">Course</label>
-            <select name="course" id="">
+            <select class="text-center" name="course" id="">
                 <option value="Java">Java</option>
                 <option value="Python">Python</option>
                 <option value="JavaScript">JavaScript</option>
