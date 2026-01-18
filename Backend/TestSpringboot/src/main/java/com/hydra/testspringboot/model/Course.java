@@ -1,4 +1,4 @@
-package com.hydra.course_registration.model;
+package com.hydra.testspringboot.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -8,14 +8,14 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Courses {
+@NoArgsConstructor
+public class Course {
 
     @Id
-    private int courseId;
+    private String courseId;
     private String courseName;
     private String trainer;
-    private String durationInWeeks;
+    private int durationInWeeks;
 
 }

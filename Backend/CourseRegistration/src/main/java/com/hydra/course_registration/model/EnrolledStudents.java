@@ -13,10 +13,10 @@ public class EnrolledStudents {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    int id;
-    String studentName;
-    String studentEmailId;
-    String course;
+    private int id;
+    private String studentName;
+    private String studentEmailId;
+    private String course;
 
     public EnrolledStudents() {
     }
